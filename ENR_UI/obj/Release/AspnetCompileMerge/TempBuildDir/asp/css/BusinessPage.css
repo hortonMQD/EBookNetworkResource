@@ -1,0 +1,174 @@
+#Content2 a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: #000000;
+}
+#Content2 ul li {
+    list-style: none;
+}
+#Content2 #content {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+    /*
+        …Û∫À–≈œ¢
+    */
+#Content2 .right {
+    margin: 0 auto;
+    padding-right: 10px;
+}
+    #Content2 .right .top {
+        float: left;
+        border: 1px solid #ddd;
+    }
+        #Content2 .right .top .left {
+            float: left;
+            width: 18%;
+            overflow: hidden;
+        }
+            #Content2 .right .top .left img {
+                width: 190px;
+                height: 230px;
+            }
+        #Content2 .right .top .right {
+            float: right;
+            width: 80%;
+            margin-left: 10px;
+        }
+            #Content2 .right .top .right li {
+                float: left;
+                width: 50%;
+                margin-top: 10px;
+            }
+    #Content2 .right .middle {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        border: 1px solid #ddd;
+    }
+        #Content2 .right .middle .text {
+            width: 100%;
+        }
+    #Content2 .right .bottom {
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        border: 1px solid #ddd;
+    }
+        #Content2 .right .bottom .downButton {
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #7abf36;
+            font-size: 20px;
+            text-align: center;
+            float: left;
+            margin: 20px;
+            display: block;
+        }
+        #Content2 .right .bottom .text {
+            float: left;
+            margin: 20px;
+            display: block;
+        }
+    #Content2 .right .AuditOpinion {
+        float:left;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+
+
+#Content2 .list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Content2 .list {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+    #Content2 .list a img {
+        width: 90px;
+        height: 100px;
+        float: left;
+        margin-right: 12px;
+        border: 0 none;
+    }
+
+    #Content2 .list .text {
+        overflow: hidden;
+        margin-top: 5px;
+        height: 75px;
+    }
+
+        #Content2 .list .text u {
+            display: block;
+            line-height: 25px;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+    #Content2 .list .s {
+        line-height: 25px;
+        float: right;
+        margin-left: 16px;
+        padding-left: 16px;
+        border-left: 1px dashed #000000;
+    }
+
+    #Content2 .list ul li {
+        padding-bottom: 10px;
+        margin-top: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+/*
+ * UserRegister   UserLogin
+ */
+.content {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #000000;
+}
+
+    .content h1 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 40px
+    }
+
+    .content .content-box {
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+        border: 1px solid #000000;
+    }
+
+
+#form .item-box {
+    margin-top: 20px;
+}
+
+.item-box .item {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#form .item-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.item-box .item {
+    display: inline-block;
+    margin-right: 30px;
+}
+

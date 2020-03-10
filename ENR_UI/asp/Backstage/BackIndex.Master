@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BackIndex.Master.cs" Inherits="ENR_UI.asp.Backstage.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="../css/BackIndex.css" />
+    <link href="../css/IndexContent.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/font-awesome.css" />
+    <link href="../css/color.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="color-top">
+    <div id="banner">
+			<span class="logo-box"><a href="EmployeePersonalCenter.aspx"><img src="../img/光之魔法阵.png" style="width: 100px; height: 100px;"></a></span>  
+			<span class="left-box">欢迎你：<%=info.Name %> | 魔动力资源网后台管理</span>
+			<span class="right-box"><a href="EmployeePersonalCenter.aspx"><i class="fa fa-user"></i> 我</a> | <a href="login.aspx">退出</a></span>
+		</div>
+	<div id="content">
+		<div class="left-box">
+			<ul class="item-box">
+                <li><a href="#">系统设置</a>
+				    <ul class="item">
+						<li><a target="_parent" href="EmployeePersonalCenter.aspx">个人中心</a></li>
+                        <li><a target="_parent" href="EmployeePwd.aspx">修改密码</a></li>
+					</ul>
+				</li>
+				<li><a href="#">图书管理</a>
+					<ul class="item">
+                        <li><a target="_parent" href="BookList.aspx">图书列表</a></li>
+                        <li><a target="_parent" href="UnAuditedList .aspx">未审核</a></li>
+						<li><a target="_parent" href="AuditedList.aspx">已审核</a></li>
+					</ul>
+				</li>
+                <%if (!info.Limit.Equals("001")) { %>
+				<li><a href="#">部门管理</a>
+					<ul class="item">
+						<li><a href="DepartmentList.aspx">部门列表</a></li>
+                        <%if (info.Limit.Equals("010")) { %>
+						<li><a href="DepartmentAdd.aspx">部门添加</a></li>
+                        <%} %>
+					</ul>
+				</li>
+                <%} %>
+				<li><a href="#">用户管理</a>
+				    <ul class="item">
+						<li><a href="UserList.aspx">用户列表</a></li>
+                        <%if (!info.Limit.Equals("001")) { %>
+						<li><a href="EmployeeList.aspx">员工列表</a></li>
+                        <li><a href="EmployeeAdd.aspx">员工入职</a></li>
+                        <%} %>
+					</ul>
+				</li>
+                <li><a href="#">权限管理</a>
+				    <ul class="item">
+						<li><a href="LimitList.aspx">权限列表</a></li>
+					</ul>
+				</li>
+                <%if (info.Limit.Equals("010")) { %>
+				<li><a href="#">图表管理</a>
+					<ul class="item">
+						<li><a href="#">各类型书籍数量</a></li>
+					</ul>
+				</li>
+                <%} %>
+			</ul>
+		</div>
+		<div class="right-box">
+			 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+			 </asp:ContentPlaceHolder>
+		</div>
+			
+	</div>
+	<div id="foot">
+		<span>Copyright © 601中央委员会Horton
+            <br>此网站内容仅为毕业设计</span>
+	</div>
+   </div>
+</body>
+</html>

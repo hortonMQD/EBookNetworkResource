@@ -1,0 +1,76 @@
+﻿#content {
+    height: auto;
+    width: 100%;
+    margin: 10px auto;
+    overflow: hidden;
+    /*background: url(../img/wallroom-1920x1080-bg-fef0b50.jpg);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				*/
+}
+
+    #content .left-box {
+        border: 1px solid #ddd;
+        clear: both;
+        float: left;
+        width: 20%;
+        height: 500px;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-bottom:20px;
+        line-height: 30px;
+    }
+
+        #content .left-box a {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+        }
+
+        #content .left-box .item-box {
+            margin:0;
+            padding:0;
+        }
+
+        #content .left-box ul li {
+            list-style: none;
+        }
+
+            #content .left-box ul li ul {
+                display: none; /*将 二级 菜单隐藏起来*/
+                list-style: none;
+            }
+
+            #content .left-box ul li:hover ul, #content .left-box ul li:hover ul a {
+                display: block; /*当鼠标移动到一级标签后，ul即二级菜单显示出来*/
+                list-style: none;
+            }
+
+                #content .left-box a:hover, #content .left-box ul li:hover ul a:hover {
+                    color: red;
+                    text-decoration: none;
+                }
+
+        #content .left-box a:visited {
+            color: #000;
+            text-decoration: none;
+        }
+
+        #content .left-box a:active {
+            color: #000;
+            text-decoration: none;
+        }
+
+    #content .right-box {
+        float: left;
+        width: 75%;
+        height: 94%;
+        margin-top: 2%;
+        margin-left: 1%;
+    }
+
+        #content .right-box .content-box {
+            width: 100%;
+        }

@@ -1,0 +1,6 @@
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Model\bin\Debug\ENR_Model.dll
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Model\bin\Debug\ENR_Model.pdb
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Model\obj\Debug\ENR_Model.csproj.CoreCompileInputs.cache
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Model\obj\Debug\ENR_Model.dll
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Model\obj\Debug\ENR_Model.pdb
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Model\obj\Debug\ENR_Model.csprojAssemblyReference.cache

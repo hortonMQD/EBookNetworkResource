@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\常用文档\布置网站项目 - 副本\后台管理系统</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ashx/AddUser.ashx">
+      <publishTime>02/07/2020 20:38:10</publishTime>
+    </File>
+    <File Include="ashx/DepartmentAdd.ashx">
+      <publishTime>02/14/2020 19:50:26</publishTime>
+    </File>
+    <File Include="ashx/DepartmentUpdate.ashx">
+      <publishTime>02/14/2020 20:36:57</publishTime>
+    </File>
+    <File Include="ashx/DownLoad.ashx">
+      <publishTime>02/12/2020 20:11:57</publishTime>
+    </File>
+    <File Include="ashx/EmployeeAdd.ashx">
+      <publishTime>02/14/2020 21:48:21</publishTime>
+    </File>
+    <File Include="ashx/EmployeeInformation.ashx">
+      <publishTime>02/14/2020 21:33:36</publishTime>
+    </File>
+    <File Include="ashx/EmployeePersonalCenter.ashx">
+      <publishTime>02/13/2020 11:49:04</publishTime>
+    </File>
+    <File Include="ashx/EmployeePwd.ashx">
+      <publishTime>02/13/2020 13:15:15</publishTime>
+    </File>
+    <File Include="ashx/PersonalLogin.ashx">
+      <publishTime>02/13/2020 11:33:53</publishTime>
+    </File>
+    <File Include="ashx/Select.ashx">
+      <publishTime>02/12/2020 20:32:27</publishTime>
+    </File>
+    <File Include="ashx/UpdateAuditOpinion.ashx">
+      <publishTime>02/14/2020 13:07:44</publishTime>
+    </File>
+    <File Include="ashx/UserLogin.ashx">
+      <publishTime>02/07/2020 21:37:45</publishTime>
+    </File>
+    <File Include="ashx/UserPersonalCenter.ashx">
+      <publishTime>02/07/2020 22:55:27</publishTime>
+    </File>
+    <File Include="ashx/UserPwd.ashx">
+      <publishTime>02/07/2020 23:55:50</publishTime>
+    </File>
+    <File Include="ashx/UserUpdataBookInfomation.ashx">
+      <publishTime>02/11/2020 11:48:17</publishTime>
+    </File>
+    <File Include="ashx/UserUploadEBook.ashx">
+      <publishTime>02/08/2020 00:37:06</publishTime>
+    </File>
+    <File Include="asp/Backstage/AuditBookInformation.aspx">
+      <publishTime>02/14/2020 22:14:56</publishTime>
+    </File>
+    <File Include="asp/Backstage/AuditedList.aspx">
+      <publishTime>02/13/2020 14:27:49</publishTime>
+    </File>
+    <File Include="asp/Backstage/BackgroundLogin.html">
+      <publishTime>02/13/2020 14:32:41</publishTime>
+    </File>
+    <File Include="asp/Backstage/BackIndex.Master">
+      <publishTime>02/14/2020 22:12:14</publishTime>
+    </File>
+    <File Include="asp/Backstage/BookList.aspx">
+      <publishTime>02/13/2020 14:32:50</publishTime>
+    </File>
+    <File Include="asp/Backstage/DepartmentAdd.aspx">
+      <publishTime>02/14/2020 19:59:18</publishTime>
+    </File>
+    <File Include="asp/Backstage/DepartmentInformation.aspx">
+      <publishTime>02/14/2020 20:47:31</publishTime>
+    </File>
+    <File Include="asp/Backstage/DepartmentList.aspx">
+      <publishTime>02/14/2020 20:27:18</publishTime>
+    </File>
+    <File Include="asp/Backstage/EmployeeAdd.aspx">
+      <publishTime>02/14/2020 21:53:03</publishTime>
+    </File>
+    <File Include="asp/Backstage/EmployeeInformation.aspx">
+      <publishTime>02/14/2020 21:45:17</publishTime>
+    </File>
+    <File Include="asp/Backstage/EmployeeList.aspx">
+      <publishTime>02/14/2020 22:23:43</publishTime>
+    </File>
+    <File Include="asp/Backstage/EmployeePersonalCenter.aspx">
+      <publishTime>02/14/2020 12:31:39</publishTime>
+    </File>
+    <File Include="asp/Backstage/EmployeePwd.aspx">
+      <publishTime>02/14/2020 12:56:26</publishTime>
+    </File>
+    <File Include="asp/Backstage/LimitList.aspx">
+      <publishTime>02/14/2020 21:57:49</publishTime>
+    </File>
+    <File Include="asp/Backstage/login.html">
+      <publishTime>02/13/2020 11:38:07</publishTime>
+    </File>
+    <File Include="asp/Backstage/UnAuditBookInformation.aspx">
+      <publishTime>02/14/2020 13:45:33</publishTime>
+    </File>
+    <File Include="asp/Backstage/UnAuditedList .aspx">
+      <publishTime>02/14/2020 11:51:52</publishTime>
+    </File>
+    <File Include="asp/Backstage/UserInformation.aspx">
+      <publishTime>02/14/2020 22:28:08</publishTime>
+    </File>
+    <File Include="asp/Backstage/UserList.aspx">
+      <publishTime>02/14/2020 22:22:37</publishTime>
+    </File>
+    <File Include="asp/css/BackIndex.css">
+      <publishTime>02/05/2020 09:20:22</publishTime>
+    </File>
+    <File Include="asp/css/BookInformation.css">
+      <publishTime>02/12/2020 20:08:49</publishTime>
+    </File>
+    <File Include="asp/css/BusinessPage.css">
+      <publishTime>02/06/2020 16:19:15</publishTime>
+    </File>
+    <File Include="asp/css/ClassificationOfBook.css">
+      <publishTime>02/02/2020 16:56:48</publishTime>
+    </File>
+    <File Include="asp/css/font-awesome.css">
+      <publishTime>02/02/2020 16:56:48</publishTime>
+    </File>
+    <File Include="asp/css/FormTableCss.css">
+      <publishTime>02/06/2020 15:49:12</publishTime>
+    </File>
+    <File Include="asp/css/Index.css">
+      <publishTime>02/03/2020 16:09:17</publishTime>
+    </File>
+    <File Include="asp/css/IndexContent.css">
+      <publishTime>02/05/2020 12:26:42</publishTime>
+    </File>
+    <File Include="asp/css/login.css">
+      <publishTime>02/02/2020 16:56:48</publishTime>
+    </File>
+    <File Include="asp/fonts/fontawesome-webfont.eot">
+      <publishTime>02/02/2020 18:34:34</publishTime>
+    </File>
+    <File Include="asp/fonts/fontawesome-webfont.svg">
+      <publishTime>02/02/2020 18:34:34</publishTime>
+    </File>
+    <File Include="asp/fonts/fontawesome-webfont.ttf">
+      <publishTime>02/02/2020 18:34:34</publishTime>
+    </File>
+    <File Include="asp/fonts/fontawesome-webfont.woff">
+      <publishTime>02/02/2020 18:34:34</publishTime>
+    </File>
+    <File Include="asp/fonts/fontawesome-webfont.woff2">
+      <publishTime>02/02/2020 18:34:34</publishTime>
+    </File>
+    <File Include="asp/fonts/FontAwesome.otf">
+      <publishTime>02/02/2020 18:34:34</publishTime>
+    </File>
+    <File Include="asp/img/161120113245-10.jpg">
+      <publishTime>02/02/2020 16:59:55</publishTime>
+    </File>
+    <File Include="asp/img/161120113245-8.jpg">
+      <publishTime>02/02/2020 16:59:55</publishTime>
+    </File>
+    <File Include="asp/img/34257cb7e21d703fe5af0a93e05075ad.jpg">
+      <publishTime>02/02/2020 16:59:55</publishTime>
+    </File>
+    <File Include="asp/img/506127.jpg">
+      <publishTime>02/02/2020 16:59:55</publishTime>
+    </File>
+    <File Include="asp/img/51.jpg">
+      <publishTime>02/02/2020 16:59:55</publishTime>
+    </File>
+    <File Include="asp/img/5A39E3B1531DFF8AEA589E6B1A7B55C3.jpg">
+      <publishTime>02/02/2020 16:59:55</publishTime>
+    </File>
+    <File Include="asp/img/wallroom-1920x1080-bg-fef0b50.jpg">
+      <publishTime>02/02/2020 16:59:55</publishTime>
+    </File>
+    <File Include="asp/img/家徽.png">
+      <publishTime>02/14/2020 16:27:22</publishTime>
+    </File>
+    <File Include="asp/img/暂无封面.jpg">
+      <publishTime>02/05/2020 12:03:50</publishTime>
+    </File>
+    <File Include="asp/img/校徽.jpg">
+      <publishTime>02/02/2020 16:59:55</publishTime>
+    </File>
+    <File Include="asp/Reception/BackHomepage.master">
+      <publishTime>02/05/2020 12:05:10</publishTime>
+    </File>
+    <File Include="asp/Reception/BookInformation.aspx">
+      <publishTime>02/14/2020 17:14:21</publishTime>
+    </File>
+    <File Include="asp/Reception/ClassificationOfBooks.aspx">
+      <publishTime>02/13/2020 14:08:44</publishTime>
+    </File>
+    <File Include="asp/Reception/Index.aspx">
+      <publishTime>02/14/2020 14:48:31</publishTime>
+    </File>
+    <File Include="asp/Reception/Reception.Master">
+      <publishTime>02/14/2020 16:28:09</publishTime>
+    </File>
+    <File Include="asp/Reception/ReceptionInformation.master">
+      <publishTime>02/14/2020 12:07:48</publishTime>
+    </File>
+    <File Include="asp/Reception/UserBookInformation.aspx">
+      <publishTime>02/14/2020 14:34:30</publishTime>
+    </File>
+    <File Include="asp/Reception/UserLogin.aspx">
+      <publishTime>02/10/2020 22:42:09</publishTime>
+    </File>
+    <File Include="asp/Reception/UserPersonalCenter.aspx">
+      <publishTime>02/07/2020 23:06:38</publishTime>
+    </File>
+    <File Include="asp/Reception/UserPwd.aspx">
+      <publishTime>02/08/2020 00:04:38</publishTime>
+    </File>
+    <File Include="asp/Reception/UserRegister.aspx">
+      <publishTime>02/07/2020 20:51:38</publishTime>
+    </File>
+    <File Include="asp/Reception/UserReleasedEBook.aspx">
+      <publishTime>02/13/2020 14:26:03</publishTime>
+    </File>
+    <File Include="asp/Reception/UserUploadEbook.aspx">
+      <publishTime>02/14/2020 14:30:02</publishTime>
+    </File>
+    <File Include="asp/Test/Failure.html">
+      <publishTime>02/07/2020 20:42:10</publishTime>
+    </File>
+    <File Include="asp/Test/Successful.html">
+      <publishTime>02/07/2020 20:42:10</publishTime>
+    </File>
+    <File Include="bin/ENR_Bll.dll">
+      <publishTime>02/15/2020 10:08:26</publishTime>
+    </File>
+    <File Include="bin/ENR_Bll.pdb">
+      <publishTime>02/15/2020 10:08:26</publishTime>
+    </File>
+    <File Include="bin/ENR_Dal.dll">
+      <publishTime>02/15/2020 10:08:26</publishTime>
+    </File>
+    <File Include="bin/ENR_Dal.pdb">
+      <publishTime>02/15/2020 10:08:26</publishTime>
+    </File>
+    <File Include="bin/ENR_Model.dll">
+      <publishTime>02/15/2020 10:08:25</publishTime>
+    </File>
+    <File Include="bin/ENR_Model.pdb">
+      <publishTime>02/15/2020 10:08:25</publishTime>
+    </File>
+    <File Include="bin/ENR_UI.dll">
+      <publishTime>02/15/2020 10:09:01</publishTime>
+    </File>
+    <File Include="bin/ENR_UI.pdb">
+      <publishTime>02/15/2020 10:09:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>02/02/2020 12:59:48</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/15/2020 10:09:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

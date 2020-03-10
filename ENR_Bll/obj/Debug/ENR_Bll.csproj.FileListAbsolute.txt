@@ -1,0 +1,11 @@
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Bll\bin\Debug\ENR_Bll.dll
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Bll\bin\Debug\ENR_Bll.pdb
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Bll\bin\Debug\ENR_Dal.dll
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Bll\bin\Debug\ENR_Model.dll
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Bll\bin\Debug\ENR_Dal.pdb
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Bll\bin\Debug\ENR_Model.pdb
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Bll\obj\Debug\ENR_Bll.csprojAssemblyReference.cache
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Bll\obj\Debug\ENR_Bll.csproj.CoreCompileInputs.cache
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Bll\obj\Debug\ENR_Bll.csproj.CopyComplete
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Bll\obj\Debug\ENR_Bll.dll
+E:\学习\编程\毕业设计\电子书资源网\EBookNetworkResource\ENR_Bll\obj\Debug\ENR_Bll.pdb

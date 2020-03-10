@@ -1,0 +1,495 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34D3817A-3870-4EF6-8A3E-7F56BB0F47E0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ENR_UI</RootNamespace>
+    <AssemblyName>ENR_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="asp\Backstage\AuditBookInformation.aspx" />
+    <Content Include="asp\Backstage\BookList.aspx" />
+    <Content Include="asp\Backstage\DepartmentAdd.aspx" />
+    <Content Include="asp\Backstage\DepartmentInformation.aspx" />
+    <Content Include="asp\Backstage\DepartmentList.aspx" />
+    <Content Include="asp\Backstage\EmployeeAdd.aspx" />
+    <Content Include="asp\Backstage\EmployeeInformation.aspx" />
+    <Content Include="asp\Backstage\EmployeeList.aspx" />
+    <Content Include="asp\Backstage\EmployeePersonalCenter.aspx" />
+    <Content Include="asp\Backstage\EmployeePwd.aspx" />
+    <Content Include="asp\Backstage\LimitList.aspx" />
+    <Content Include="asp\Backstage\login.aspx" />
+    <Content Include="asp\Backstage\UnAuditBookInformation.aspx" />
+    <Content Include="asp\Backstage\UnAuditedList .aspx" />
+    <Content Include="asp\Backstage\AuditedList.aspx" />
+    <Content Include="asp\Backstage\UserInformation.aspx" />
+    <Content Include="asp\Backstage\UserList.aspx" />
+    <Content Include="asp\css\color.css" />
+    <Content Include="asp\css\FormTableCss.css" />
+    <Content Include="asp\css\IndexContent.css" />
+    <Content Include="asp\css\BackIndex.css" />
+    <Content Include="asp\css\BookInformation.css" />
+    <Content Include="asp\css\BusinessPage.css" />
+    <Content Include="asp\css\ClassificationOfBook.css" />
+    <Content Include="asp\css\font-awesome.css" />
+    <Content Include="asp\css\Index.css" />
+    <Content Include="asp\css\login.css" />
+    <Content Include="asp\fonts\fontawesome-webfont.svg" />
+    <Content Include="asp\Img.aspx" />
+    <Content Include="asp\img\161120113245-10.jpg" />
+    <Content Include="asp\img\161120113245-8.jpg" />
+    <Content Include="asp\img\34257cb7e21d703fe5af0a93e05075ad.jpg" />
+    <Content Include="asp\img\506127.jpg" />
+    <Content Include="asp\img\51.jpg" />
+    <Content Include="asp\img\5A39E3B1531DFF8AEA589E6B1A7B55C3.jpg" />
+    <Content Include="asp\img\wallroom-1920x1080-bg-fef0b50.jpg" />
+    <Content Include="asp\img\光之魔法阵.png" />
+    <Content Include="asp\img\家徽.png" />
+    <Content Include="asp\img\暂无封面.jpg" />
+    <Content Include="asp\img\校徽.jpg" />
+    <Content Include="asp\Reception\BookInformation.aspx" />
+    <Content Include="asp\Reception\ClassificationOfBooks.aspx" />
+    <Content Include="asp\Reception\Index.aspx" />
+    <Content Include="asp\Reception\UserBookInformation.aspx" />
+    <Content Include="asp\Reception\UserLogin.aspx" />
+    <Content Include="asp\Reception\UserPersonalCenter.aspx" />
+    <Content Include="asp\Reception\UserPwd.aspx" />
+    <Content Include="asp\Reception\UserRegister.aspx" />
+    <Content Include="asp\Reception\UserReleasedEBook.aspx" />
+    <Content Include="asp\Reception\UserUploadEbook.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ashx\AddUser.ashx.cs">
+      <DependentUpon>AddUser.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\Alert.cs" />
+    <Compile Include="ashx\BookDelete.ashx.cs">
+      <DependentUpon>BookDelete.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\DepartmentAdd.ashx.cs">
+      <DependentUpon>DepartmentAdd.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\DepartmentUpdate.ashx.cs">
+      <DependentUpon>DepartmentUpdate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\DownLoad.ashx.cs">
+      <DependentUpon>DownLoad.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\EmployeeAdd.ashx.cs">
+      <DependentUpon>EmployeeAdd.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\EmployeeInformation.ashx.cs">
+      <DependentUpon>EmployeeInformation.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\EmployeePersonalCenter.ashx.cs">
+      <DependentUpon>EmployeePersonalCenter.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\EmployeePwd.ashx.cs">
+      <DependentUpon>EmployeePwd.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\Out.ashx.cs">
+      <DependentUpon>Out.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\PersonalLogin.ashx.cs">
+      <DependentUpon>PersonalLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\Select.ashx.cs">
+      <DependentUpon>Select.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\UpdateAuditOpinion.ashx.cs">
+      <DependentUpon>UpdateAuditOpinion.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\UserLogin.ashx.cs">
+      <DependentUpon>UserLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\UserPersonalCenter.ashx.cs">
+      <DependentUpon>UserPersonalCenter.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\UserPwd.ashx.cs">
+      <DependentUpon>UserPwd.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\UserUpdataBookInfomation.ashx.cs">
+      <DependentUpon>UserUpdataBookInfomation.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\UserUploadEBook.ashx.cs">
+      <DependentUpon>UserUploadEBook.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\AuditBookInformation.aspx.cs">
+      <DependentUpon>AuditBookInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\AuditBookInformation.aspx.designer.cs">
+      <DependentUpon>AuditBookInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\BookList.aspx.cs">
+      <DependentUpon>BookList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\BookList.aspx.designer.cs">
+      <DependentUpon>BookList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\DepartmentAdd.aspx.cs">
+      <DependentUpon>DepartmentAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\DepartmentAdd.aspx.designer.cs">
+      <DependentUpon>DepartmentAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\DepartmentInformation.aspx.cs">
+      <DependentUpon>DepartmentInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\DepartmentInformation.aspx.designer.cs">
+      <DependentUpon>DepartmentInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\DepartmentList.aspx.cs">
+      <DependentUpon>DepartmentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\DepartmentList.aspx.designer.cs">
+      <DependentUpon>DepartmentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\EmployeeAdd.aspx.cs">
+      <DependentUpon>EmployeeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\EmployeeAdd.aspx.designer.cs">
+      <DependentUpon>EmployeeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\EmployeeInformation.aspx.cs">
+      <DependentUpon>EmployeeInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\EmployeeInformation.aspx.designer.cs">
+      <DependentUpon>EmployeeInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\EmployeeList.aspx.cs">
+      <DependentUpon>EmployeeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\EmployeeList.aspx.designer.cs">
+      <DependentUpon>EmployeeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\EmployeePersonalCenter.aspx.cs">
+      <DependentUpon>EmployeePersonalCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\EmployeePersonalCenter.aspx.designer.cs">
+      <DependentUpon>EmployeePersonalCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\EmployeePwd.aspx.cs">
+      <DependentUpon>EmployeePwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\EmployeePwd.aspx.designer.cs">
+      <DependentUpon>EmployeePwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\LimitList.aspx.cs">
+      <DependentUpon>LimitList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\LimitList.aspx.designer.cs">
+      <DependentUpon>LimitList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\UnAuditBookInformation.aspx.cs">
+      <DependentUpon>UnAuditBookInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\UnAuditBookInformation.aspx.designer.cs">
+      <DependentUpon>UnAuditBookInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\UnAuditedList .aspx.cs">
+      <DependentUpon>UnAuditedList .aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\UnAuditedList .aspx.designer.cs">
+      <DependentUpon>UnAuditedList .aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\BackIndex.Master.cs">
+      <DependentUpon>BackIndex.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\BackIndex.Master.designer.cs">
+      <DependentUpon>BackIndex.Master</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\AuditedList.aspx.cs">
+      <DependentUpon>AuditedList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\AuditedList.aspx.designer.cs">
+      <DependentUpon>AuditedList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\UserInformation.aspx.cs">
+      <DependentUpon>UserInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\UserInformation.aspx.designer.cs">
+      <DependentUpon>UserInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Backstage\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Backstage\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Img.aspx.cs">
+      <DependentUpon>Img.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Img.aspx.designer.cs">
+      <DependentUpon>Img.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\BackHomepage.master.cs">
+      <DependentUpon>BackHomepage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\BackHomepage.master.designer.cs">
+      <DependentUpon>BackHomepage.master</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\BookInformation.aspx.cs">
+      <DependentUpon>BookInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\BookInformation.aspx.designer.cs">
+      <DependentUpon>BookInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\ClassificationOfBooks.aspx.cs">
+      <DependentUpon>ClassificationOfBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\ClassificationOfBooks.aspx.designer.cs">
+      <DependentUpon>ClassificationOfBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\Reception.Master.cs">
+      <DependentUpon>Reception.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\Reception.Master.designer.cs">
+      <DependentUpon>Reception.Master</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\ReceptionInformation.master.cs">
+      <DependentUpon>ReceptionInformation.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\ReceptionInformation.master.designer.cs">
+      <DependentUpon>ReceptionInformation.master</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\UserBookInformation.aspx.cs">
+      <DependentUpon>UserBookInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\UserBookInformation.aspx.designer.cs">
+      <DependentUpon>UserBookInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\UserPersonalCenter.aspx.cs">
+      <DependentUpon>UserPersonalCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\UserPersonalCenter.aspx.designer.cs">
+      <DependentUpon>UserPersonalCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\UserPwd.aspx.cs">
+      <DependentUpon>UserPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\UserPwd.aspx.designer.cs">
+      <DependentUpon>UserPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\UserRegister.aspx.cs">
+      <DependentUpon>UserRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\UserRegister.aspx.designer.cs">
+      <DependentUpon>UserRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\UserReleasedEBook.aspx.cs">
+      <DependentUpon>UserReleasedEBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\UserReleasedEBook.aspx.designer.cs">
+      <DependentUpon>UserReleasedEBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Reception\UserUploadEbook.aspx.cs">
+      <DependentUpon>UserUploadEbook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\Reception\UserUploadEbook.aspx.designer.cs">
+      <DependentUpon>UserUploadEbook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libman.json" />
+    <Content Include="asp\Backstage\BackIndex.Master" />
+    <Content Include="asp\fonts\fontawesome-webfont.eot" />
+    <Content Include="asp\fonts\fontawesome-webfont.ttf" />
+    <Content Include="asp\fonts\fontawesome-webfont.woff" />
+    <Content Include="asp\fonts\fontawesome-webfont.woff2" />
+    <Content Include="asp\fonts\FontAwesome.otf" />
+    <Content Include="asp\Reception\Reception.Master" />
+    <Content Include="asp\Reception\ReceptionInformation.master" />
+    <Content Include="asp\Reception\BackHomepage.master" />
+    <Content Include="ashx\AddUser.ashx" />
+    <Content Include="ashx\UserLogin.ashx" />
+    <Content Include="ashx\UserPersonalCenter.ashx" />
+    <Content Include="ashx\UserPwd.ashx" />
+    <Content Include="ashx\UserUploadEBook.ashx" />
+    <Content Include="ashx\UserUpdataBookInfomation.ashx" />
+    <Content Include="ashx\DownLoad.ashx" />
+    <Content Include="ashx\Select.ashx" />
+    <Content Include="ashx\PersonalLogin.ashx" />
+    <Content Include="ashx\EmployeePersonalCenter.ashx" />
+    <Content Include="ashx\EmployeePwd.ashx" />
+    <Content Include="ashx\UpdateAuditOpinion.ashx" />
+    <Content Include="ashx\DepartmentAdd.ashx" />
+    <Content Include="ashx\DepartmentUpdate.ashx" />
+    <Content Include="ashx\EmployeeInformation.ashx" />
+    <Content Include="ashx\EmployeeAdd.ashx" />
+    <Content Include="ashx\BookDelete.ashx" />
+    <Content Include="ashx\Out.ashx" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="asp\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ENR_Bll\ENR_Bll.csproj">
+      <Project>{193b6f7a-f39c-43c6-828b-d85c32853474}</Project>
+      <Name>ENR_Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENR_Model\ENR_Model.csproj">
+      <Project>{b22e6daf-073d-4706-b677-3808a2d86625}</Project>
+      <Name>ENR_Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14138</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:14138/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

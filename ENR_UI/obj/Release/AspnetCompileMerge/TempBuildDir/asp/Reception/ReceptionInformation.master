@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/asp/Reception/Reception.Master" AutoEventWireup="true" CodeBehind="ReceptionInformation.master.cs" Inherits="ENR_UI.asp.Reception.ReceptionInformation" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="../css/ClassificationOfBook.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="content">
+			<div id="left-box">
+				<div class="top-box">
+					<div class="title-box title-box-color"><div class="h1-color-box"><h1>小说分类</h1></div></div>
+					
+					<div class="list">
+						<ul>
+                            <%for (int i = 0; i < departmentInfos.ToArray().Length; i++ ){ %>
+                                <%if (departmentInfos[i].IsTrue.Equals("1")){ %>
+                                    <li><a href="ClassificationOfBooks.aspx?departID=<%=departmentInfos[i].Id %>"><%=departmentInfos[i].Name %></a></li>
+                                  <%} %>
+                              <%} %>
+							<li><a href="ClassificationOfBooks.aspx?departID=20">最新电子书</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="bottom-box">
+					<div class="title-box title-box-color">
+						<div class="h1-color-box"><h1>最新入库</h1></div><a href="ClassificationOfBooks.aspx?departID=20" class="color-a">更多</a>
+					</div>
+					<div class="list-box">
+						<ul>
+                            <%for (int i = 0; i < 20 && i<bookInfos.ToArray().Length; i++ ){ %>
+                                <li><u><em>作者：<%=bookInfos[i].Author %></em><a href="BookInformation.aspx?bookID=<%=bookInfos[i].Id %>"><%=bookInfos[i].Name %></a></u></li>
+                            <%} %>
+						</ul>
+					</div>
+				
+				</div>
+			</div>
+			
+				<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+		</div>
+</asp:Content>

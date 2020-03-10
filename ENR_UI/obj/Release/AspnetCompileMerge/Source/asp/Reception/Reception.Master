@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Reception.Master.cs" Inherits="ENR_UI.asp.Reception.Reception" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+    <link rel="stylesheet" href="../css/Index.css" />
+	<link rel="stylesheet" href="../css/font-awesome.css" />
+    <link href="../css/color.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="color-top">
+    <div id="banner">
+		<div class="left-box"><a class="logo" href="Index.aspx"><img src="../img/光之魔法阵.png"/> 魔动力资源网</a></div>
+		<div class="right-box">
+            <%if (Session["userID"] != null) {%>
+                <a class="a-href" href="UserPersonalCenter.aspx"><i class="fa fa-user"></i>个人中心</a>|<a class="a-href" href="../../ashx/Out.ashx">退出</a>
+            <%} else { %>
+                <form method="post" action="../../ashx/UserLogin.ashx" name="Index" onsubmit="">
+                    <i class="fa fa-user"></i><input type="text" maxlength="20" name="userName"/><br />
+			        <i class="fa fa-unlock-alt"></i><input type="password" maxlength="20" name="userPwd"/><br />
+			        <input type="submit" value="登陆"/><a href="UserRegister.aspx"><input type="button" value="注册"/></a>
+                </form>
+            <%} %>
+            
+		</div>
+	</div>
+    <div id="nav" class="nav">
+        <div class="left-box">
+            <ul>
+                <li><a href="Index.aspx">首页</a></li>
+                <%for (int i = 0; i < departmentInfos.ToArray().Length; i++ ){ %>
+                    <li><a href="ClassificationOfBooks.aspx?departID=<%=departmentInfos[i].Id %>"><%=departmentInfos[i].Name %></a></li>
+                <%} %>
+            </ul>
+        </div>
+        <div class="right-box">
+            <form method="post" action="../../ashx/Select.ashx">
+            <input type="text" name="bookName" placeholder="搜  索"/>
+            <input type="submit" value="搜索" class="button"/>
+                </form>
+		</div>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <div id="foot">
+		<span>Copyright © 601中央委员会Horton
+            <br>此网站内容仅为毕业设计<br />
+            声明:本站所有内容皆由Horton自网络收集整理,版权归原作者和出版社所有</span>
+	</div>
+        </div>
+</body>
+</html>

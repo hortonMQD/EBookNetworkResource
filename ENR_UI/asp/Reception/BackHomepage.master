@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/asp/Reception/Reception.Master" AutoEventWireup="true" CodeBehind="BackHomepage.master.cs" Inherits="ENR_UI.asp.Reception.BackHomepage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="../css/IndexContent.css" rel="stylesheet" />
+    <link href="../css/color.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="content">
+		<div class="left-box">
+			<ul class="item-box">
+				<li class="li-color"><a href="#">系统设置</a>
+					<ul class="item">
+                        <li class="li-item-color"><a target="_parent" href="UserPersonalCenter.aspx">个人中心</a></li>
+                        <li class="li-item-color"><a target="_parent" href="UserPwd.aspx">密码修改</a></li>
+					</ul>
+				</li>
+				<li class="li-color"><a href="#">图书管理</a>
+					<ul class="item">
+						<li class="li-item-color"><a target="_parent" href="UserUploadEbook.aspx">书籍发布</a></li>
+						<li class="li-item-color"><a target="_parent" href="UserReleasedEBook.aspx">已发布书籍</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="right-box">
+			 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+			 </asp:ContentPlaceHolder>
+		</div>
+	</div>
+</asp:Content>
